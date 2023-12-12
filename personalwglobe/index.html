@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="personal.js"></script>
+    <script type="module" src="globe.js"></script>
+    <title>Vargas - Portfolio</title>
+</head>
+<body>
+  <section id="navs">
+    <nav id="desktop-nav">
+        <div id="name">
+            Erik Vargas
+        </div>
+        <div>
+            <ul id="nav-links">
+                <li><a class="navlink" href="#top">About me</a></li>
+                <li><a class="navlink" href="#projects">My projects</a></li>
+                <li><a class="navlink" href="#contact">Contact me</a></li>
+            </ul>  
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div id="name">
+            Erik Vargas
+        </div>
+        <div id="hamburger-menu">
+            <div id="hamburger-icon" onclick="toggleMenu()">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            <div id="hamburger-links">
+                <li><a class="hamlink" href="#top" onclick="toggleMenu()">About me</a></li>
+                <li><a class="hamlink" href="#projects" onclick="toggleMenu()">My projects</a></li>
+                <li><a class="hamlink" href="#contact" onclick="toggleMenu()" >Contact me</a></li>
+            </div>
+        </div>
+    </nav>
+  </section>
+
+  <section id="nonnav">
+        <div id="globe-container">
+            <canvas id="globe"></canvas>
+        </div>
+
+        <div id="content">
+            <section id="main">
+                <div class="maindiv">
+                        <p id="mainbio">
+                            Physicist, educator, and leader.
+                        </p>
+                        <br>
+                        <p id="mainbio2">
+                            <em> I create innovative solutions for people-centered projects and enterprises. </em>
+                        </p>
+                </div>
+                <div id="social-links">
+                    <a href="https://www.linkedin.com/in/erivargas" target="_blank">
+                        <img class="sociallink" src="public/linkedin.svg">
+                    </a>
+                    <a href="https://github.com/Ehwick" target="_blank">
+                        <img class="sociallink" src="public/github.svg">
+                    </a>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div id="projectsdiv">
+                    <p id="project-title">My projects</p>
+                    <div id="project-section"> </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div id="contactdiv">
+                    <p id="contacttag">Contact me</p>
+                    <p class="contacts" id="contactemail"><b>Email: </b>&nbsp; vargaserik1@gmail.com</p>
+                    <p class="contacts" id="phone"><b>Phone: </b>&nbsp; 469.363.2474</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p id="footerwords">&copy; Vargas 2023 </p>
+        </footer>
+    </section>
+</body>
+</html>
