@@ -22,9 +22,11 @@ function createProjectCard(project) {
 
     const projectTitle = document.createElement("h3");
     projectTitle.textContent = project.title;
-
+    projectTitle.style.color = "black";
+    
     const projectDescription = document.createElement("p");
     projectDescription.textContent = project.description;
+    projectDescription.style.color = "black";
 
     const projectImage = document.createElement("img");
     projectImage.src = project.image;
@@ -63,4 +65,9 @@ function toggleMenu() {
     const icon = document.querySelector('#hamburger-icon');
     menu.classList.toggle('open');
     icon.classList.toggle('open');
+}
+
+function sendEmail() 
+{
+    window.location = "mailto:vargaserik1@gmail.com";
 }

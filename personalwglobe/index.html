@@ -18,7 +18,7 @@
         </div>
         <div>
             <ul id="nav-links">
-                <li><a class="navlink" href="#top">About me</a></li>
+                <li><a class="navlink" href="#main">About me</a></li>
                 <li><a class="navlink" href="#projects">My projects</a></li>
                 <li><a class="navlink" href="#contact">Contact me</a></li>
             </ul>  
@@ -80,13 +80,15 @@
             <section id="contact">
                 <div id="contactdiv">
                     <p id="contacttag">Contact me</p>
-                    <p class="contacts" id="contactemail"><b>Email: </b>&nbsp; vargaserik1@gmail.com</p>
+                    <p class="contacts" id="contactemail">
+                        <b>Email: </b>&nbsp; <a id="email" onclick="sendEmail();">vargaserik1@gmail.com</a>
+                    </p>
                     <p class="contacts" id="phone"><b>Phone: </b>&nbsp; 469.363.2474</p>
                 </div>
             </section>
         </div>
 
-        <footer>
+        <footer id="footer">
             <p id="footerwords">&copy; Vargas 2023 </p>
         </footer>
     </section>

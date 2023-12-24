@@ -5,4 +5,7 @@
     #hamburger-nav {
         display: flex;
     }
+    #main {
+        margin-top: 1.5rem;
+    }
 }
