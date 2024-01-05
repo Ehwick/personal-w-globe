@@ -16,7 +16,7 @@ globerenderer.render(globescene, globecamera);
 // creating globe
 const geometry = new THREE.SphereGeometry( 0.85, 64, 64 ); 
 const material = new THREE.MeshPhongMaterial({ 
-  map: new THREE.TextureLoader().load('texture/earthmap.jpeg'),
+  map: new THREE.TextureLoader().load('texture/blackmap.jpeg'),
   bumpmap: new THREE.TextureLoader().load('texture/betterbumpmap.jpeg'),
   bumpScale: 1,
 }); 
