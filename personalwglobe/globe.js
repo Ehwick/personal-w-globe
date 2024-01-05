@@ -16,8 +16,8 @@ globerenderer.render(globescene, globecamera);
 // creating globe
 const geometry = new THREE.SphereGeometry( 0.85, 64, 64 ); 
 const material = new THREE.MeshPhongMaterial({ 
-  map: new THREE.TextureLoader().load('texture/static/images/blackmap.jpeg'),
-  bumpmap: new THREE.TextureLoader().load('texture/static/images/betterbumpmap.jpeg'),
+  map: new THREE.TextureLoader().load('./static/images/blackmap.jpeg'),
+  bumpmap: new THREE.TextureLoader().load('.static/images/betterbumpmap.jpeg'),
   bumpScale: 1,
 }); 
 const sphere = new THREE.Mesh( geometry, material ); 
@@ -41,7 +41,7 @@ globescene.add(pointerLight);
 
 const starsGeometry = new THREE.SphereGeometry(5, 64, 64);
 const starMaterial = new THREE.MeshBasicMaterial({
-    map: new THREE.TextureLoader().load('texture/static/images/stars.jpeg'),
+    map: new THREE.TextureLoader().load('./static/images/stars.jpeg'),
     side: THREE.BackSide
 });
 const starMesh = new THREE.Mesh(starsGeometry, starMaterial);
