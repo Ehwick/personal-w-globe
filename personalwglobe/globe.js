@@ -16,9 +16,9 @@ globerenderer.render(globescene, globecamera);
 // creating globe
 const geometry = new THREE.SphereGeometry( 0.85, 64, 64 ); 
 const material = new THREE.MeshPhongMaterial({ 
-  map: new THREE.TextureLoader().load('texture/earthmap.jpeg'),
+  map: new THREE.TextureLoader().load('texture/blackmap.jpeg'),
   bumpmap: new THREE.TextureLoader().load('texture/betterbumpmap.jpeg'),
-  bumpScale: 0.1,
+  bumpScale: 1,
 }); 
 const sphere = new THREE.Mesh( geometry, material ); 
 if (window.innerWidth < 910) {
@@ -31,7 +31,7 @@ if (window.innerWidth < 910) {
 // Add globe to scene
 globescene.add(sphere) ;
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 globescene.add(ambientLight);
 const pointerLight = new THREE.PointLight(0xffffff, 15);
 pointerLight.position.set(0,1.5,0);
@@ -70,7 +70,8 @@ function animate() {
   sphere.rotation.x += 0.01;
   sphere.rotation.y += 0.01;
   sphere.rotation.z += 0.01;
-  starMesh.rotation.y += 0.002;
+  starMesh.rotation.y -= 0.002;
+  starMesh.rotation.x += 0.002;
   globerenderer.render(globescene, globecamera);
 }
 
