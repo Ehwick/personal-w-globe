@@ -2,13 +2,13 @@ const projectsData = [
     {
         title: "Social media clone",
         description: "Single-page app created with a React frontend, Node and Express backend, and Mongo database. Project utilizes Redux Toolkit for state-management, React Router for conditional rendering, MaterialUI for design, and is equipped with Bcrypt and middleware for user-authorization.",
-        image: "public/vargasbook.jpeg",
+        image: "siteimages/vargasbook.jpeg",
         link: "https://github.com/Ehwick/media-clone"
     },
     {
         title: "Computer vision apps",
         description: "3 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.",
-        image: "public/cvpython.jpeg",
+        image: "siteimages/cvpython.jpeg",
         link: "https://github.com/Ehwick/computervisionapps"
     },
     // Add more projects as needed
