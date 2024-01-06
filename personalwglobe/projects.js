@@ -31,7 +31,8 @@ function createProjectCard(project) {
     const projectImage = document.createElement("img");
     projectImage.src = project.image;
     projectImage.alt = project.title;
-    projectImage.style.width = "90%";
+    projectImage.style.width = "70%"
+    projectImage.style.height = "auto";
     projectImage.style.border = "2px solid black";
     projectImage.style.borderRadius = "25px";
     projectImage.style.height = "auto";
