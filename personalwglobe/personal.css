@@ -106,7 +106,7 @@ nav {
     display: none;
     gap: 7.5rem;
     padding-bottom: 1rem;
-    /* border-bottom: 2.5px solid rgb(180, 15, 15); */
+    border-bottom: 1px solid whitesmoke;
 }
 
 #hamburger-menu {
@@ -306,6 +306,12 @@ nav {
 
 #project-section > * {
     margin-top: 0; /* Reset top margin for all direct children */
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* contact styling */

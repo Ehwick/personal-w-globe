@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <script type="module" src="clickevents.js"></script>
-    <script type="module" src="projects.js"></script>
     <script type="module" src="globe.js"></script>
     <title>Vargas - Portfolio</title>
 </head>
@@ -73,6 +72,26 @@
             <section id="projects">
                 <div id="projectsdiv">
                     <p id="project-title">My projects</p>
+                    <div id="project-cards">
+                        <div class="project-card" id="mediaclone">
+                            <h3> Social media clone </h3>
+                            <a target="_blank" href="https://github.com/Ehwick/media-clone"> 
+                                <img class="project-image" src="./static/images/vargasbook.jpeg">
+                            </a>
+                            <p>
+                                Single-page app created with a React frontend, Node and Express backend, and Mongo database. Project utilizes Redux Toolkit for state-management, React Router for conditional rendering, MaterialUI for design, and is equipped with Bcrypt and middleware for user-authorization.
+                            </p>
+                        </div>
+                        <div class="project-card" id="cvpython">
+                            <h3> Computer vision apps </h3>
+                            <a target="_blank" href="https://github.com/Ehwick/computervisionapps">
+                                <img class="project-image" src="./static/images/cvpython.jpeg">
+                            </a>
+                            <p>
+                                2 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.
+                            </p>
+                        </div>
+                    </div>
                     <div id="project-section"> </div>
                 </div>
             </section>
