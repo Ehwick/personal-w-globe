@@ -60,7 +60,7 @@ function onWindowResize() {
   }
   if (window.innerHeight < 500) {
     sphere.position.y = (0 + (window.innerHeight / 1000)) - 1.45;
-    sphere.position.x = -1.6;
+    sphere.position.x = -2;
   } 
   else {
     sphere.position.y = 0 - (window.innerHeight / 1000);
