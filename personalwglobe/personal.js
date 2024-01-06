@@ -70,6 +70,8 @@ function toggleMenu() {
 
 const hamcon = document.getElementById("hamburger-icon");
 hamcon.addEventListener("click", toggleMenu);
+const hamlink = document.querySelectorAll(".hamlink");
+hamlink.addEventListener("click", toggleMenu);
 
 function sendEmail() 
 {
