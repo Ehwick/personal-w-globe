@@ -7,7 +7,7 @@ const projectsData = [
     },
     {
         title: "Computer vision apps",
-        description: "3 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.",
+        description: "2 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.",
         image: "./static/images/cvpython.jpeg",
         link: "https://github.com/Ehwick/computervisionapps"
     },
