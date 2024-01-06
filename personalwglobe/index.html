@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script type="module" src="personal.js"></script>
+    <script src="clickevents.js"></script>
+    <script type="module" src="projects.js"></script>
     <script type="module" src="globe.js"></script>
     <title>Vargas - Portfolio</title>
 </head>
@@ -31,7 +32,7 @@
             Erik Vargas
         </div>
         <div id="hamburger-menu">
-            <div id="hamburger-icon">
+            <div id="hamburger-icon" onclick="toggleMenu()">
                 <span> </span>
                 <span> </span>
                 <span> </span>
@@ -83,7 +84,7 @@
                 <div id="contactdiv">
                     <p id="contacttag">Contact me</p>
                     <p class="contacts" id="contactemail">
-                        <b>Email: </b>&nbsp; <a id="email">verik@sas.upenn.edu</a>
+                        <b>Email: </b>&nbsp; <a id="email" onclick="sendEmail()">verik@sas.upenn.edu</a>
                     </p>
                     <p class="contacts" id="phone"><b>Phone: </b>&nbsp; 469.363.2474</p>
                 </div>

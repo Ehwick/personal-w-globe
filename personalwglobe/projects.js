@@ -60,15 +60,3 @@ function displayProjects() {
 
 // Call the function to display projects when the page loads
 window.addEventListener("load", displayProjects);
-
-function toggleMenu() {
-    const menu = document.querySelector('#hamburger-links');
-    const icon = document.querySelector('#hamburger-icon');
-    menu.classList.toggle('open');
-    icon.classList.toggle('open');
-}
-
-function sendEmail() 
-{
-    window.location = "mailto:vargaserik1@gmail.com";
-}
