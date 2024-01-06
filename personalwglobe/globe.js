@@ -59,10 +59,10 @@ function onWindowResize() {
     sphere.position.x = -1.3 - (window.innerWidth / 1000);
   }
   if (window.innerHeight < 500) {
-    sphere.position.y = (-1.3 - (window.innerHeight / 1000)) + 0.45;
+    sphere.position.y = 1.3 - (window.innerHeight / 1000)) + 0.45;
   } 
   else {
-    sphere.position.y = -1.3 - (window.innerHeight / 1000);
+    sphere.position.y = 1.3 - (window.innerHeight / 1000);
   }
   globecamera.updateProjectionMatrix();
   globerenderer.setSize((window.innerWidth), (window.innerHeight));
