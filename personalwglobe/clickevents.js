@@ -7,7 +7,7 @@ function toggleMenu() {
 
 const hamcon = document.getElementById('hamburger-icon');
 hamcon.addEventListener('click', toggleMenu);
-const hamlinks = document.querySelectorAll('#hamlink');
+const hamlinks = document.querySelectorAll('.hamlink');
 for (let i = 0; i < hamlinks.length; i++) {
     hamlinks[i].addEventListener('click', toggleMenu);
 };
