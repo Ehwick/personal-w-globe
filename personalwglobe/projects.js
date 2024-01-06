@@ -34,7 +34,7 @@ function createProjectCard(project) {
     projectImage.style.width = "70%"
     projectImage.style.height = "auto";
     projectImage.style.border = "2px solid black";
-    projectImage.style.borderRadius = "25px";
+    projectImage.style.borderRadius = "8px";
     projectImage.style.height = "auto";
 
     const projectLink = document.createElement("a");
