@@ -14,7 +14,7 @@ for (let i = 0; i < hamlinks.length; i++) {
 
 function sendEmail() 
 {
-    window.location = "mailto:vargaserik1@gmail.com";
+    window.location = "mailto:verik@sas.upenn.edu";
 };
 
 const email = document.getElementById('email');
