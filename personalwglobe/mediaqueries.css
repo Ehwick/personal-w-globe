@@ -99,7 +99,7 @@
 
 @media screen  and (max-height: 500px) {
     #main {
-        height: 50vh;
+        height: 40vh;
     }
     #maindiv {
         padding-bottom: 2rem;
