@@ -99,6 +99,12 @@
 
 @media screen  and (max-height: 500px) {
     #main {
-        height: 40vh;
+        height: 50vh;
+    }
+    #maindiv {
+        padding-bottom: 2rem;
+    }
+    #main-contact {
+        font-size: 1rem;
     }
 }
