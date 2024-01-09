@@ -120,6 +120,10 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+#email, #resume {
+    color: white;
+}
+
 /* projects styling */
 
 #projects {
