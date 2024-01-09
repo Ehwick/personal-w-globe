@@ -1,6 +1,7 @@
 @media screen  and (max-width: 450px) {
     .maindiv {
-        padding-bottom: 0rem;
+        margin-left: 0rem;
+        padding: 0rem;
     }
 }
 
