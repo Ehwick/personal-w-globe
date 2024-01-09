@@ -1,3 +1,5 @@
+/* MAX WIDTHS */
+
 @media screen  and (max-width: 450px) {
     .maindiv {
         margin-left: 0rem;
@@ -30,6 +32,15 @@
     }
 }
 
+@media screen  and (max-width: 1100px) {
+    .project-card {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
+/* MIN-WIDTHS */
+
 @media screen  and (min-width: 600px) {
     #headshot {
         max-width: 220px;
@@ -37,22 +48,37 @@
 }
 
 @media screen  and (min-width: 800px) {
+    .project-div > * {
+        padding-right: 2rem;
+    } 
     .project-image {
         max-width: 400px;
         height: auto;
     }
-    #intro {
+    #main-contact {
         font-size: 1.5rem;
     }
-    .project-div > * {
-        padding-right: 2rem;
-    } 
 }
 
-@media screen  and (min-width: 1000px) {
+@media screen  and (min-width: 1100px) {
     #main {
         margin-left: 6rem;
         padding-bottom: 0rem;
+    }
+    #maindiv {
+        margin-right: 5rem;
+    }
+    #education > *, #experience > * {
+        font-size: 1.5rem;
+    }
+    .project-name {
+        font-size: 1.5rem;
+    }
+    .project-description, .viewGithub {
+        font-size: 1;
+    }
+    #intro, #about-header, #projects-header {
+        font-size: 2rem;
     }
 }
 
@@ -62,6 +88,14 @@
         padding-bottom: 0rem;
     }
 }
+
+@media screen  and (min-width: 1300px) {
+    #maindiv {
+        margin-right: 8rem;
+    }
+}
+
+/* HEIGHT */
 
 @media screen  and (max-height: 500px) {
     #main {
