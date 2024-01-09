@@ -1,3 +1,9 @@
+@media screen  and (max-width: 450px) {
+    .maindiv {
+        padding-left: 0.5rem;
+    }
+}
+
 @media screen  and (max-width: 800px) {
     #main {
         margin-left: 0rem;
@@ -17,12 +23,6 @@
     }
     .project-image {
         margin-bottom: 2rem;
-    }
-}
-
-@media screen  and (min-width: 450px) {
-    .maindiv {
-        padding-left: 0.5rem;
     }
 }
 
