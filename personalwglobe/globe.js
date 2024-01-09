@@ -10,36 +10,33 @@ const globerenderer = new THREE.WebGLRenderer({
 });
 globerenderer.setClearColor(0x000000); 
 globerenderer.setPixelRatio( window.devicePixelRatio );
-globerenderer.setSize((window.innerWidth), (window.innerHeight));
+globerenderer.setSize((window.innerWidth), (window.innerHeight * 0.7));
+globecamera.aspect = window.innerWidth / (window.innerHeight * 0.7);
+globecamera.updateProjectionMatrix();
 globerenderer.render(globescene, globecamera);
 
 // creating globe
-const geometry = new THREE.SphereGeometry( 0.85, 64, 64 ); 
+const geometry = new THREE.SphereGeometry( 1.8, 64, 64 ); 
 const material = new THREE.MeshPhongMaterial({ 
-  map: new THREE.TextureLoader().load('./static/images/blackmap.jpeg'),
+  map: new THREE.TextureLoader().load('./static/images/earthmap.jpeg'),
   bumpmap: new THREE.TextureLoader().load('.static/images/betterbumpmap.jpeg'),
   bumpScale: 1,
 }); 
 const sphere = new THREE.Mesh( geometry, material ); 
-if (window.innerWidth < 910) {
-    sphere.position.x = (-1.3 - (window.innerWidth / 1000)) + 0.45;
-  } 
-  else {
-    sphere.position.x = -1.3- (window.innerWidth / 1000);
-  }
+sphere.position.set(1.75,-1,0);
 
 // Add globe to scene
 globescene.add(sphere) ;
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 globescene.add(ambientLight);
-const pointerLight = new THREE.PointLight(0xffffff, 15);
-pointerLight.position.set(0,1.5,0);
+const pointerLight = new THREE.PointLight(0xffffff, 20);
+pointerLight.position.set(0.5,-0.5,3.2);
 globescene.add(pointerLight);
 
 // -------------------------------------------------------------------
 
-const starsGeometry = new THREE.SphereGeometry(5, 64, 64);
+const starsGeometry = new THREE.SphereGeometry(8, 64, 64);
 const starMaterial = new THREE.MeshBasicMaterial({
     map: new THREE.TextureLoader().load('./static/images/stars.jpeg'),
     side: THREE.BackSide
@@ -50,35 +47,25 @@ globescene.add(starMesh);
 // ---------------------------------------------- ---------------------
 // window resize and system animation 
 
-function onWindowResize() {
-  globecamera.aspect = window.innerWidth / window.innerHeight;
-  if (window.innerWidth < 910) {
-    sphere.position.x = (-1.3 - (window.innerWidth / 1000)) + 0.45;
-  } 
-  else {
-    sphere.position.x = -1.3 - (window.innerWidth / 1000);
-  }
-  if (window.innerHeight < 500) {
-    sphere.position.y = (0 + (window.innerHeight / 1000)) - 1.45;
-    sphere.position.x = -2;
-  } 
-  else {
-    sphere.position.y = 0 - (window.innerHeight / 1000);
-  }
+window.addEventListener('resize', function () {
+  const newWidth = window.innerWidth;
+  const newHeight = window.innerHeight * 0.7;
+
+  globecamera.aspect = newWidth / newHeight;
   globecamera.updateProjectionMatrix();
-  globerenderer.setSize((window.innerWidth), (window.innerHeight));
-}
-window.addEventListener('resize', onWindowResize);
+  globerenderer.setSize(newWidth, newHeight);
+});
+
 
 
 function animate() {
   requestAnimationFrame(animate);
 
-  sphere.rotation.x += 0.01;
-  sphere.rotation.y += 0.01;
-  sphere.rotation.z += 0.01;
-  starMesh.rotation.y -= 0.002;
-  starMesh.rotation.x += 0.002;
+  sphere.rotation.x += 0.003;
+  sphere.rotation.y += 0.003;
+  sphere.rotation.z += 0.003;
+  starMesh.rotation.y -= 0.0005;
+  starMesh.rotation.x += 0.0005;
   globerenderer.render(globescene, globecamera);
 }
 

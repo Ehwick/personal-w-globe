@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Homemade+Apple&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 * {
     margin: 0;
@@ -19,14 +17,8 @@ body {
     background-color: black;
 }
 
-h1 {
-    font-size: 4rem;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-h3 {
-    font-size: 2rem;
-    font-family: 'Cormorant Garamond', serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -41,41 +33,21 @@ footer {
     padding: 10px 0;
 }
 
-nav {
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-}
-
-/* everything inside the header */
-
-#name {
-    width: 35%;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 4rem;
+a {
     text-decoration: none;
 }
 
-#name:hover {
-    color: rgb(180, 15, 15);
-}
-        /* desktop header */
+        /* nav */
 
-#desktop-nav {
-    background-color: black;
-    padding: 10px 0;
+#nav {
     text-align: center;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     transition: 0.7s;
     width: 100%;
     display: inline-flex;
     gap: 6rem;
-    border-bottom: 1px solid whitesmoke;
-    position: fixed;
-    top: 0;
-    z-index: 1000; 
+    background-color: transparent;
 }
 
 #nav-links {
@@ -83,287 +55,213 @@ nav {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    margin-top: 0.8rem;
     list-style-type: none;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 .navlink {
     color: white;
-    text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .navlink:hover {
     color: rgb(180, 15, 15);
-    text-decoration: underline;
-    text-underline-offset: 0.8rem;
 }
-
-            /* hamburger header */
-
-#hamburger-nav {
-    display: none;
-    gap: 7.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid whitesmoke;
-}
-
-#hamburger-menu {
-    position: relative;
-    display: inline-block;
-}
-
-#hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-#hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-    z-index: 2;
-}
-
-#hamburger-links {
-    position: fixed;
-    top: 0;
-    right: -60%;
-    background-color: white;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    overflow: hidden;
-    transition: right 0.3s ease-in-out;
-    list-style: none;
-    border: none;
-    padding: 0;
-}
-
-#hamburger-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-#hamburger-links.open {
-    right: 0;
-    background-color: rgb(180, 15, 15);
-    margin-top: 0;
-    border-left: 1px solid #000000;
-}
-
-#hamburger-links.open a {
-    color: white;
-}
-
-#hamburger-links.open a:hover {
-    text-decoration: underline;
-}
-
-.hamlink {
-    color: black;
-    text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.hamlink:hover {
-    color: whitesmoke;
-    text-decoration: underline;
-    text-underline-offset: 0.8rem;
-}
-
-#hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-    z-index: 2;
-}
-
-#hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-    z-index: 2;
-}
-
-#hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-    z-index: 2;
-}
-
-#hamburger-icon span:first-child {
-    transform: none;
-    z-index: 2;
-}
-
-
+    
     /* globe/content styling */
 
 #globe-container {
     position: fixed;
-    top: 0;
-    right: 70;
-    width: 100%;  /* Set the width for the globe container */
-    height: 100%; /* Make the container take the full height of the viewport */
     z-index: -1; /* Set a higher z-index to make sure it's above other content */
 } 
     
 #globe {
     display: block;
+    height: 100%;
 }
-
-#content {
-    margin-left: 40%; /* Set margin to leave space for the fixed globe container */
-    margin-right: 5%;
-}
-
 
 /* main section styling */
 
 #main {
-    margin-bottom: 20px;
-    margin-top: 8rem;
-    /* border: solid 2px rgb(180, 15, 15); */
-    border-radius: 8px;
-    padding: 2rem;
-    background-color: white;
-    scroll-margin-top: 120px;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    background-color: transparent;
+    height: 60vh;
+    margin-right: 50%;
+    display: flex;
+    margin-left: 4rem;
 }
 
 .maindiv {
-    justify-content: space-around;
-    align-items: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    margin-right: 0;
+}
+
+#name {
+    width: 35%;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 #mainbio {
     justify-content: center;
-    margin-right: 2rem;
     align-items: center;
-    font-size: 2.1rem;
-    list-style-type: none;
-    text-underline-offset: 0.5rem;
-    color: black;
-    font-family: 'Cormorant Garamond', serif;
+    color: rgb(190, 151, 59);
 }
 
-#mainbio2 {
-    font-size: 1.8rem;
-    color: black;
-}
-
-.sociallink {
-    width: 60px;
-    height: 60px;
-}
-
-#social-links {
-    margin-top: 2rem;
+#main-contact {
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* projects styling */
 
 #projects {
-    scroll-margin-top: 110px;
-    /* border: solid 2px rgb(180, 15, 15); */
-    border-radius: 8px;
     padding: 2rem;
     background-color: white;
 }
 
-#projectsdiv {
-    align-items: top;
-    /* margin-top: 4rem; */
+#project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#project-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    align-items: center;
+.project-card {
     display: flex;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-thickness: 0.1rem;
-    color: black
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.project-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-div > * {
+    flex: 1;
+} 
+
+
+#projectsdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects-header {
+    color: rgb(196, 40, 40);
+    height: 10vh;
 }
 
 #project-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
-#project-section > * {
-    margin-top: 0; /* Reset top margin for all direct children */
+.project-name {
+    color: rgb(196, 40, 40);
 }
 
 .project-image {
-    max-width: 100%;
+    max-width: 80%;
+    min-width: "200px";
     height: auto;
-    border-radius: 8px;
-}
-
-/* contact styling */
-
-#contact {
-    /* border: solid 2px rgb(180, 15, 15); */
-    border-radius: 8px;
-    padding: 2rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: white;
 }
 
-#contactdiv {
-    align-items: top;
-    margin-top: 1rem;
-    margin-bottom: 20px;
+.project-description {
+    max-width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
 
-#contacttag {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+/* about me styling */
+
+#about {
+    background-color: rgba(61, 116, 171);
+}
+
+#aboutdiv {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-header {
     align-items: center;
     display: flex;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-thickness: 0.1rem;
     color: black;
-    margin-bottom: 0.5rem;
+    padding: 2rem;
 }
 
-.contacts {
-    font-size: 1.2rem;
-    color: black;
+#about-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#email {
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-    text-decoration-thickness: 0.05rem;
-    text-wrap: wrap;
-    color: black
+#about-top > * {
+    flex: 1;
+    padding: 1rem;
+}
+
+#intro {
+    font-weight: 300;
+}
+
+#headshot {
+    border-radius: 50%;
+    width: 50%;
+}
+
+#about-body > * {
+    padding: 0 1rem 3rem;
+}
+
+#edu, #exp {
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /* footer styling */
 
 #footer {
-    background-color: black;
-    border-top:  1px solid whitesmoke;
+    background-color: white;
+    display: flex;
+}
+
+#footer > * {
+    flex: 1;
 }
 
 #footerwords {
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social {
+    width: 20px;
+    margin-right: 3rem;
 }

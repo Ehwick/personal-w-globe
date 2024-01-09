@@ -6,110 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script type="module" src="clickevents.js"></script>
+    <script type="module" src="index.js"></script>
     <script type="module" src="globe.js"></script>
     <title>Vargas - Portfolio</title>
 </head>
 <body>
-  <section id="navs">
 
-    <nav id="desktop-nav">
-        <div id="name">
-            Erik Vargas
-        </div>
-        <div>
-            <ul id="nav-links">
-                <li><a class="navlink" href="#main">About me</a></li>
-                <li><a class="navlink" href="#projects">My projects</a></li>
-                <li><a class="navlink" href="#contact">Contact me</a></li>
-            </ul>  
-        </div>
+    <div id="globe-container">
+        <canvas id="globe"></canvas>
+    </div> 
+
+    <nav id="nav">
+        <ul id="nav-links">
+            <li><a class="navlink" href="#about">ABOUT</a></li>
+            <li><a class="navlink" href="#projects">PROJECTS</a></li>
+            <li><a class="navlink" href="#top">CONTACT</a></li>
+        </ul>  
     </nav>
 
-    <nav id="hamburger-nav">
-        <div id="name">
-            Erik Vargas
+    <section id="main">
+        <div class="maindiv">
+                <h1 id="name">ERIK VARGAS</h1>
+                <h2 id="mainbio">
+                    <em> Physicist, developer, leader. </em>
+                </h2>
+                <br>
+                <p id="main-contact">
+                    <a id="email">verik@sas.upenn.edu</a>
+                    <br>
+                    (469)-363-2474
+                </p>
         </div>
-        <div id="hamburger-menu">
-            <div id="hamburger-icon">
-                <span> </span>
-                <span> </span>
-                <span> </span>
-            </div>
-            <div id="hamburger-links">
-                <li><a class="hamlink" href="#top">About me</a></li>
-                <li><a class="hamlink" href="#projects">My projects</a></li>
-                <li><a class="hamlink" href="#contact">Contact me</a></li>
-            </div>
-        </div>
-    </nav>
+    </section>
 
-  </section>
-
-  <section id="nonnav">
-        <div id="globe-container">
-            <canvas id="globe"></canvas>
-        </div>
-
-        <div id="content">
-            <section id="main">
-                <div class="maindiv">
-                        <p id="mainbio">
-                            Physicist, developer, and leader.
-                        </p>
-                        <br>
-                        <p id="mainbio2">
-                            <em> Self-taught programmer tirelessly passionate about the intersections of technology and society </em>
-                        </p>
-                </div>
-                <div id="social-links">
-                    <a href="https://github.com/Ehwick" target="_blank">
-                        <img class="sociallink" src="socialLinks/github.svg">
-                    </a>
-                </div>
-            </section>
-
-            <section id="projects">
-                <div id="projectsdiv">
-                    <p id="project-title">My projects</p>
-                    <div id="project-cards">
-                        <div class="project-card" id="mediaclone">
-                            <h3> Social media clone </h3>
-                            <a target="_blank" href="https://github.com/Ehwick/media-clone"> 
-                                <img class="project-image" src="./static/images/vargasbook.jpeg">
-                            </a>
-                            <p>
+    <section id="projects">
+        <div id="projectsdiv">
+            <h3 id="projects-header">PROJECTS</h3>
+            <div id="project-cards">
+                <div class="project-card">
+                    <h3 class="project-name"> Social media clone </h3>
+                    <div class="project-div">
+                        <img class="project-image" src="./static/images/vargasbook.jpeg">
+                        <div>
+                            <p class="project-description">
                                 Single-page app created with a React frontend, Node and Express backend, and Mongo database. Project utilizes Redux Toolkit for state-management, React Router for conditional rendering, MaterialUI for design, and is equipped with Bcrypt and middleware for user-authorization.
                             </p>
-                        </div>
-                        <div class="project-card" id="cvpython">
-                            <h3> Computer vision apps </h3>
-                            <a target="_blank" href="https://github.com/Ehwick/computervisionapps">
-                                <img class="project-image" src="./static/images/cvpython.jpeg">
+                            <a target="_blank" href="https://github.com/Ehwick/media-clone"> 
+                                <em> View on Github </em>
                             </a>
-                            <p>
-                                2 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.
-                            </p>
                         </div>
                     </div>
-                    <div id="project-section"> </div>
                 </div>
-            </section>
-
-            <section id="contact">
-                <div id="contactdiv">
-                    <p id="contacttag">Contact me</p>
-                    <p class="contacts" id="contactemail">
-                        <b>Email: </b>&nbsp; <a id="email">verik@sas.upenn.edu</a>
-                    </p>
-                    <p class="contacts" id="phone"><b>Phone: </b>&nbsp; 469.363.2474</p>
+                <div class="project-card" id="cvpython">
+                    <h3 class="project-name"> Computer vision apps </h3>
+                    <div class="project-div">
+                        <img class="project-image" src="./static/images/vision.jpeg">
+                        <div>
+                            <p class="project-description">
+                                2 python apps created by utilizing OpenCV and Tkinter libraries. In the Drawing setting of the app, Mediapipe is used to allow the user to draw on the webcam using their own index finger as a stylus, with clear canvas capabilities. In the Text Recognition setting, Tesseract is used to recognize any printed words displayed on the webcam.
+                            </p>
+                            <a target="_blank" href="https://github.com/Ehwick/computervisionapps"> 
+                                <em> View on Github </em>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div id="project-section"> </div>
         </div>
-
-        <footer id="footer">
-            <p id="footerwords">&copy; Vargas 2023 </p>
-        </footer>
     </section>
+
+    <section id="about">
+        <div id="aboutdiv">
+            <h3 id="about-header">ABOUT</h3>
+            <div id="about-top">
+                <h4 id="intro">
+                    Hi! My name is Erik Vargas and I am a full stack 
+                    developer with strengths in JavaScript and Python. 
+                    I am an inventor at heart and I possess an insatiable 
+                    drive to bring my ideas and designs to life.
+                </h4>
+                <img id="headshot" src="./static/images/headshot.jpeg">
+            </div>
+            <div id="about-body">
+                <div id="education">
+                    <h4> Education: </h4>
+                    <p id="edu">
+                        I graduated from the University of Pennsylvania 
+                        in 2020 with a degree in Physics of Cum Laude 
+                        distinction. While I did not take a single computer 
+                        science course while there, the rigor of the classes 
+                        I took, the problem-solving approaches I learned, 
+                        and the metacognitive abilities I gained prepared me 
+                        to readily learn anything I put my mind to, including 
+                        full stack development.
+                    </p>
+                </div>
+                <div id="experience">
+                    <h4> Experience: </h4>
+                    <p id="exp">
+                        After graduating, I decided to take on jobs that pushed 
+                        me to learn about the world around me - I found my self 
+                        serving, bartending, and then later teaching high school 
+                        physics. Through these experiences I learned a lot about 
+                        workflows, working backwards to bring a project to fruition, 
+                        managing stressful situtations effortlessly, working with 
+                        and managing other people, among many other lessons. I also 
+                        taught myself software development out of interest to solve 
+                        problems around me, and to figure out how the systems 
+                        that govern our modern world work. Now, I am eager to 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <p id="footerwords">&copy; Vargas 2024 </p>
+        <div id="socials">
+            <a target="_blank" href="https://github.com/Ehwick/">
+                <img class="social" src="socialLinks/github.svg">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/erivargas/">
+                <img class="social" src="socialLinks/linkedin.svg">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
