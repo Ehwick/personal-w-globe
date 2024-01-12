@@ -114,6 +114,14 @@
     #maindiv {
         margin-right: 8rem;
     }
+    #projectsdiv {
+        width: 60%;
+        margin-left: 15%;
+    }
+    #aboutdiv {
+        width: 60%;
+        margin-left: 15%;
+    }
 }
 
 /* HEIGHT */
