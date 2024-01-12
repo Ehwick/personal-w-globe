@@ -1,5 +1,25 @@
 /* MAX WIDTHS */
 
+@media screen  and (max-width: 300px) {
+    #main {
+        margin-right: 35%;
+    }
+    #maindiv {
+        margin-left: 0rem;
+        padding: 0rem;
+    }
+    #maindiv > * {
+        font-size: 0.7rem;
+    }
+    #main {
+        height: 50vh;
+        margin-left: 0rem;
+    }
+    #nav-links {
+        gap: 0.8rem;
+    }
+}
+
 @media screen  and (max-width: 450px) {
     .maindiv {
         margin-left: 0rem;
@@ -7,6 +27,7 @@
     }
     #main {
         height: 50vh;
+        margin-left: 0rem;
     }
 }
 

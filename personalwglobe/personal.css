@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@font-face {
+    font-family: TwentiethCentury;
+    src: url(TwCenMT.ttf); 
+}
 
 * {
     margin: 0;
@@ -45,7 +49,7 @@ a {
     align-items: center;
     transition: 0.7s;
     width: 100%;
-    display: inline-flex;
+    display: flex;
     gap: 6rem;
     background-color: transparent;
 }
@@ -169,26 +173,20 @@ a {
     height: 10vh;
 }
 
-#project-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .project-name {
     color: rgb(196, 40, 40);
 }
 
 .project-image {
     max-width: 80%;
-    min-width: "200px";
+    min-width: 200px;
     height: auto;
     margin-bottom: 1rem;
 }
 
 .project-description {
     max-width: 80%;
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -229,6 +227,7 @@ a {
 #intro {
     font-weight: 300;
     color: white;
+    font-family: TwentiethCentury;
 }
 
 #headshot {
@@ -243,7 +242,7 @@ a {
 
 #edu, #exp {
     padding-top: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
     font-weight: 300;
 }
 
