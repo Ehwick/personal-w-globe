@@ -192,6 +192,7 @@ a {
     max-width: 80%;
     min-width: 200px;
     height: auto;
+    object-fit: cover;
     margin-bottom: 1rem;
 }
 
