@@ -1,6 +1,6 @@
 /* MAX WIDTHS */
 
-@media screen  and (max-width: 300px) {
+@media screen  and (max-width: 360px) {
     #main {
         margin-right: 35%;
     }
