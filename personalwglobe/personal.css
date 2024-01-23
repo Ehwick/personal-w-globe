@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
 }
 
 p {
@@ -66,7 +66,7 @@ a {
 
 .navlink {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
     font-weight: 300;
 }
 
@@ -121,10 +121,24 @@ a {
 
 #main-contact {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
 }
 
-#email, #resume {
+#email {
+    color: white;
+}
+
+.resume-button {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: black;
     color: white;
 }
 
@@ -138,16 +152,14 @@ a {
 #project-cards {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     gap: 2rem;
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .project-div {
@@ -162,22 +174,18 @@ a {
 
 
 #projectsdiv {
+    width: 70%;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    margin-left: 10%;
 }
 
-#aboutdiv {
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#projectsdiv > * {
+    margin-left: 5%;
 }
+
 
 #projects-header {
     color: rgb(196, 40, 40);
@@ -189,7 +197,7 @@ a {
 }
 
 .project-image {
-    max-width: 80%;
+    max-width: 100%;
     min-width: 200px;
     height: auto;
     object-fit: cover;
@@ -197,8 +205,8 @@ a {
 }
 
 .project-description {
-    max-width: 80%;
-    font-family: TwentiethCentury;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -207,15 +215,20 @@ a {
 
 #about {
     background-color: rgba(61, 116, 171);
+    padding: 0rem 2rem 0rem;
 }
 
 #aboutdiv {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#aboutdiv > * {
+    margin-left: 5%;
 }
 
 #about-header {
@@ -233,13 +246,13 @@ a {
 
 #about-top > * {
     flex: 1;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem;
 }
 
 #intro {
     font-weight: 300;
     color: white;
-    font-family: TwentiethCentury;
+    font-family: 'Roboto', sans-serif;
 }
 
 #headshot {
@@ -248,13 +261,13 @@ a {
 }
 
 #about-body > * {
-    padding: 0 1rem 3rem;
+    padding: 0rem 0rem 3rem;
     color: white;
 }
 
 #edu, #exp {
     padding-top: 1rem;
-    font-family: TwentiethCentury;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
@@ -271,7 +284,7 @@ a {
 
 #footerwords {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: TwentiethCentury;
     font-weight: 300;
 }
 

@@ -55,8 +55,7 @@
 
 @media screen  and (max-width: 1100px) {
     .project-card {
-        width: 95%;
-        margin-left: 2.5%;
+        width: 100%;
     }
 }
 
@@ -107,6 +106,9 @@
     #main {
         margin-left: 8rem;
         padding-bottom: 0rem;
+    }
+    .project-description {
+        font-size: 1.3rem;
     }
 }
 
