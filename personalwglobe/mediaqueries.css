@@ -29,6 +29,12 @@
         height: 50vh;
         margin-left: 0rem;
     }
+    .project-image {
+        max-height: 25vh;
+        width: auto;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
 }
 
 @media screen  and (max-width: 800px) {
