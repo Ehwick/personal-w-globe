@@ -35,6 +35,14 @@
         object-fit: cover;
         margin-bottom: 1rem;
     }
+    #projectsdiv {
+        width: 84%;
+        margin-left: 8%;
+    }
+    #aboutdiv {
+        width: 84%;
+        margin-left: 8%;
+    }
 }
 
 @media screen  and (max-width: 800px) {
