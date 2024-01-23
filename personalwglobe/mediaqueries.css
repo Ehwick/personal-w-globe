@@ -32,8 +32,7 @@
     .project-image {
         max-height: 25vh;
         width: auto;
-        object-fit: cover;
-        margin-bottom: 1rem;
+        object-fit: contain;
     }
     #projectsdiv {
         width: 84%;
